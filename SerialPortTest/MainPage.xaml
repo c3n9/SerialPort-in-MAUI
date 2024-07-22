@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SerialPortTest.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label Text="Введите число" />
+            <Entry x:Name="ENumber"
+                   Placeholder="Число" />
+            <Button x:Name="BSend"
+                    Text="Отправить" 
+                    Clicked="BSend_Clicked"/>
+            <Button x:Name="BGetPorts"
+                    Clicked="BGetPorts_Clicked"
+                    Text="Получить порты" />
+            <Picker x:Name="PComPorts"
+                    Title="Выберите COM порт" />
+            <Button x:Name="BConnect"
+                    Clicked="BConnect_Clicked"
+                    Text="Подключиться" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
