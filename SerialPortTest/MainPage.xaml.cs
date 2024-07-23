@@ -4,7 +4,6 @@ namespace SerialPortTest
 {
 	public partial class MainPage : ContentPage
 	{
-		SerialPortStream _serialPort;
 		public MainPage()
 		{
 			InitializeComponent();
@@ -12,10 +11,7 @@ namespace SerialPortTest
 
 		private void BSend_Clicked(System.Object sender, System.EventArgs e)
 		{
-			if(_serialPort != null && _serialPort.IsOpen)
-			{
-				_serialPort.Write(ENumber.Text);
-			}
+			
 		}
 
 		private async void BConnect_Clicked(System.Object sender, System.EventArgs e)
@@ -25,10 +21,8 @@ namespace SerialPortTest
 				await DisplayAlert("Ошибка", "Выберите COM порт", "OK");
 				return;
 			}
-			_serialPort = new SerialPortStream(PComPorts.SelectedItem as string, 9600);
 			try
 			{
-				_serialPort.Open();
 				await DisplayAlert("Успешно", "Вы подключились к COM порту", "OK");
 
 			}
@@ -42,8 +36,7 @@ namespace SerialPortTest
 		{
 			try
 			{
-				var ports = SerialPortStream.GetPortNames();
-				PComPorts.ItemsSource = ports;
+
 			}
 			catch(Exception ex)
 			{

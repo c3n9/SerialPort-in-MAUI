@@ -84483,11 +84483,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manakov\\source\\repos\\SerialPortTest\\SerialPortTest\\SerialPortTest.csproj",
+      "projectUniqueName": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
       "projectName": "SerialPortTest",
-      "projectPath": "C:\\Users\\manakov\\source\\repos\\SerialPortTest\\SerialPortTest\\SerialPortTest.csproj",
+      "projectPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
       "packagesPath": "C:\\Users\\manakov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manakov\\source\\repos\\SerialPortTest\\SerialPortTest\\obj\\",
+      "outputPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

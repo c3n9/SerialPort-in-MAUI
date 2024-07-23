@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialPortTest", "SerialPortTest\SerialPortTest.csproj", "{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialPortTest", "SerialPortTest\SerialPortTest.csproj", "{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsbSerialForAndroid", "UsbSerialForAndroid\UsbSerialForAndroid.csproj", "{3763F4C2-2D69-4AE9-B59F-35496FA5B64E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3763F4C2-2D69-4AE9-B59F-35496FA5B64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3763F4C2-2D69-4AE9-B59F-35496FA5B64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3763F4C2-2D69-4AE9-B59F-35496FA5B64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3763F4C2-2D69-4AE9-B59F-35496FA5B64E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

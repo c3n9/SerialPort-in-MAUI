@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6gFmxDp+cx0Cvcxwk7hA8IoBYAp2pWVJY+Hy8Dz7nAUGaOee3yBheD2XROLEGBRPmumUNg0SrWBYXhzBdIkmVA==",
+  "dgSpecHash": "PRif+yR0Q+xwrC1FR11BZtru3REE6CagJkR3pWiPmV/NXyPUbj41UWRyscm1+JFJy7RJovD6yimVCe9nyF4D1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\manakov\\source\\repos\\SerialPortTest\\SerialPortTest\\SerialPortTest.csproj",
+  "projectFilePath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\manakov\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\manakov\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
