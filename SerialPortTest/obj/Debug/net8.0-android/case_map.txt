@@ -20,4 +20,5 @@ values\attrs;android\Resources\values\attrs
 values\colors;values\colors
 values\strings;values\strings
 values\styles;android\Resources\values\styles
+xml\device_filter;xml\device_filter
 xml\microsoft_maui_essentials_fileprovider_file_paths;resources\xml\microsoft_maui_essentials_fileprovider_file_paths

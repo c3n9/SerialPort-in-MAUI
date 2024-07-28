@@ -1,1 +1,1 @@
-C:\Users\manakov\source\repos\SerialPortTest\SerialPortTest\SerialPortTest.csproj;x64
+C:\Users\C3N9\Desktop\SerialPortTestInAndroid\SerialPortTest\SerialPortTest.csproj;x64

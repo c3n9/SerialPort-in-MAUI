@@ -11,14 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.serialporttest")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "SerialPortTest")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SerialPortTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4af606e0cda0ab55d0b7f239d1f0ea0b4f8ae790")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37e67ab3c8b3262f2f74bcc743c3069d3c36af81")]
 [assembly: System.Reflection.AssemblyProductAttribute("SerialPortTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SerialPortTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

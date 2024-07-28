@@ -35,6 +35,6 @@ public final class R {
 		public static final int fallback_menu_item_share_link = 0x7f0f0037;
 	}
 	public static final class xml {
-		public static final int image_share_filepaths = 0x7f120000;
+		public static final int image_share_filepaths = 0x7f120001;
 	}
 }

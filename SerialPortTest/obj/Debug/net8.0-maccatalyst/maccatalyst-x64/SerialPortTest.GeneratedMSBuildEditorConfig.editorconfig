@@ -12,35 +12,35 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SerialPortTest
-build_property.ProjectDir = C:\Users\manakov\Documents\SerialPortTestInAndroid\SerialPortTest\
+build_property.ProjectDir = C:\Users\quart\source\repos\SerialPortTestInAndroid\SerialPortTest\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/manakov/Documents/SerialPortTestInAndroid/SerialPortTest/App.xaml]
+[C:/Users/quart/source/repos/SerialPortTestInAndroid/SerialPortTest/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SerialPortTest.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/manakov/Documents/SerialPortTestInAndroid/SerialPortTest/AppShell.xaml]
+[C:/Users/quart/source/repos/SerialPortTestInAndroid/SerialPortTest/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SerialPortTest.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/manakov/Documents/SerialPortTestInAndroid/SerialPortTest/MainPage.xaml]
+[C:/Users/quart/source/repos/SerialPortTestInAndroid/SerialPortTest/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SerialPortTest.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/manakov/Documents/SerialPortTestInAndroid/SerialPortTest/Resources/Styles/Colors.xaml]
+[C:/Users/quart/source/repos/SerialPortTestInAndroid/SerialPortTest/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SerialPortTest.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/manakov/Documents/SerialPortTestInAndroid/SerialPortTest/Resources/Styles/Styles.xaml]
+[C:/Users/quart/source/repos/SerialPortTestInAndroid/SerialPortTest/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = SerialPortTest.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

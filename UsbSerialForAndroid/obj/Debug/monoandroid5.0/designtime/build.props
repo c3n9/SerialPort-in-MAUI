@@ -1,0 +1,35 @@
+bundleassemblies=false
+aotassemblies=false
+androidaddkeepalives=
+androidaotmode=none
+androidembedprofilers=
+androidenableprofiledaot=
+androiddextool=d8
+androidlinktool=
+androidlinkresources=
+androidpackageformat=apk
+embedassembliesintoapk=false
+androidlinkmode=sdkonly
+androidlinkskip=
+androidsdkbuildtoolsversion=32.0.0
+androidsdkpath=c:\program files (x86)\android\android-sdk\
+androidndkpath=
+javasdkpath=c:\program files (x86)\android\openjdk\jdk-17.0.8.101-hotspot\
+androidsequencepointsmode=none
+xamarinandroidversion=13.2.2-0
+monosymbolarchive=false
+androiduselatestplatformsdk=false
+targetframeworkversion=v5.0
+androidcreatepackageperabi=
+androidgeneratejnimarshalmethods=false
+os=windows_nt
+androidincludedebugsymbols=true
+androidpackagenamingpolicy=lowercasecrc64
+_nugetassetstimestamp=
+typemapkind=strings-asm
+androidsupportedabis=arm64-v8a
+armeabi-v7a
+x86
+x86_64
+androidmanifestplaceholders=
+projectfullpath=c:\users\c3n9\desktop\serialporttestinandroid\usbserialforandroid\usbserialforandroid.csproj
