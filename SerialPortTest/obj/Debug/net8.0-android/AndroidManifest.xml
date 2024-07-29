@@ -23,12 +23,12 @@
         <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
       </intent-filter>
     </activity>
-    <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="crc6468b6408a11370c2f.WebAuthenticatorIntermediateActivity" />
+    <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="crc6468b6408a11370c2f.WebAuthenticatorIntermediateActivity" />
     <provider android:authorities="com.companyname.serialporttest.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="microsoft.maui.essentials.fileProvider">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/microsoft_maui_essentials_fileprovider_file_paths" />
     </provider>
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" android:name="crc64e53d2f592022988e.ConnectivityBroadcastReceiver" />
-    <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="crc64ba438d8f48cf7e75.IntermediateActivity" />
+    <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="crc64ba438d8f48cf7e75.IntermediateActivity" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc640a8d9a12ddbf2cf2.BatteryBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc640a8d9a12ddbf2cf2.EnergySaverBroadcastReceiver" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />

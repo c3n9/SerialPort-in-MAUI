@@ -54,7 +54,7 @@ namespace SerialPortTest
 						{
 							_connectedPort.Open(connection);
 							// Настройка параметров порта
-							_connectedPort.SetParameters(115200, 8, StopBits.One, Parity.None);
+							_connectedPort.SetParameters(9600, 8, StopBits.One, Parity.None);
 							return true;
 						}
 					}

@@ -13,6 +13,7 @@ public class MauiScrollView
 		__md_methods = 
 			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
+			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"n_onScrollChange:(Landroidx/core/widget/NestedScrollView;IIII)V:GetOnScrollChange_Landroidx_core_widget_NestedScrollView_IIIIHandler:AndroidX.Core.Widget.NestedScrollView/IOnScrollChangeListenerInvoker, Xamarin.AndroidX.Core\n" +
 			"";
@@ -61,6 +62,14 @@ public class MauiScrollView
 	}
 
 	private native boolean n_onTouchEvent (android.view.MotionEvent p0);
+
+
+	public void onMeasure (int p0, int p1)
+	{
+		n_onMeasure (p0, p1);
+	}
+
+	private native void n_onMeasure (int p0, int p1);
 
 
 	public void onLayout (boolean p0, int p1, int p2, int p3, int p4)

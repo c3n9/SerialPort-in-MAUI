@@ -2,6 +2,41 @@
   "version": 3,
   "targets": {
     "net8.0-android34.0": {
+      "CommunityToolkit.Maui/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.2",
+          "Microsoft.Maui.Controls": "8.0.21",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.21",
+          "Microsoft.Maui.Essentials": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -186,34 +221,33 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Maui.Controls/8.0.7": {
+      "Microsoft.Maui.Controls/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7",
-          "Microsoft.Maui.Resizetizer": "8.0.7"
+          "Microsoft.Maui.Controls.Build.Tasks": "8.0.21",
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21",
+          "Microsoft.Maui.Resizetizer": "8.0.21"
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/8.0.7": {
+      "Microsoft.Maui.Controls.Build.Tasks/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.props": {},
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.targets": {}
         }
       },
-      "Microsoft.Maui.Controls.Compatibility/8.0.7": {
+      "Microsoft.Maui.Controls.Compatibility/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Controls": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Compatibility.dll": {
@@ -226,14 +260,14 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Core/8.0.7": {
+      "Microsoft.Maui.Controls.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.dll": {
@@ -350,12 +384,12 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Xaml/8.0.7": {
+      "Microsoft.Maui.Controls.Xaml/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Xaml.dll": {
@@ -368,15 +402,15 @@
           }
         }
       },
-      "Microsoft.Maui.Core/8.0.7": {
+      "Microsoft.Maui.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Essentials": "8.0.7",
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Essentials": "8.0.21",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.Android.Glide": "4.15.1.2",
           "Xamarin.AndroidX.Lifecycle.LiveData": "2.6.1.3",
           "Xamarin.AndroidX.Navigation.Common": "2.6.0.1",
@@ -401,10 +435,10 @@
           "buildTransitive/Microsoft.Maui.Core.targets": {}
         }
       },
-      "Microsoft.Maui.Essentials/8.0.7": {
+      "Microsoft.Maui.Essentials/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.AndroidX.Browser": "1.5.0.3",
           "Xamarin.AndroidX.Security.SecurityCrypto": "1.1.0.1-alpha06",
           "Xamarin.Google.Crypto.Tink.Android": "1.10.0"
@@ -420,7 +454,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.7": {
+      "Microsoft.Maui.Graphics/8.0.21": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -433,7 +467,7 @@
           }
         }
       },
-      "Microsoft.Maui.Resizetizer/8.0.7": {
+      "Microsoft.Maui.Resizetizer/8.0.21": {
         "type": "package",
         "build": {
           "buildTransitive/Microsoft.Maui.Resizetizer.props": {},
@@ -2220,6 +2254,41 @@
       }
     },
     "net8.0-android34.0/android-arm": {
+      "CommunityToolkit.Maui/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.2",
+          "Microsoft.Maui.Controls": "8.0.21",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.21",
+          "Microsoft.Maui.Essentials": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -2404,34 +2473,33 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Maui.Controls/8.0.7": {
+      "Microsoft.Maui.Controls/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7",
-          "Microsoft.Maui.Resizetizer": "8.0.7"
+          "Microsoft.Maui.Controls.Build.Tasks": "8.0.21",
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21",
+          "Microsoft.Maui.Resizetizer": "8.0.21"
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/8.0.7": {
+      "Microsoft.Maui.Controls.Build.Tasks/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.props": {},
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.targets": {}
         }
       },
-      "Microsoft.Maui.Controls.Compatibility/8.0.7": {
+      "Microsoft.Maui.Controls.Compatibility/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Controls": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Compatibility.dll": {
@@ -2444,14 +2512,14 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Core/8.0.7": {
+      "Microsoft.Maui.Controls.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.dll": {
@@ -2568,12 +2636,12 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Xaml/8.0.7": {
+      "Microsoft.Maui.Controls.Xaml/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Xaml.dll": {
@@ -2586,15 +2654,15 @@
           }
         }
       },
-      "Microsoft.Maui.Core/8.0.7": {
+      "Microsoft.Maui.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Essentials": "8.0.7",
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Essentials": "8.0.21",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.Android.Glide": "4.15.1.2",
           "Xamarin.AndroidX.Lifecycle.LiveData": "2.6.1.3",
           "Xamarin.AndroidX.Navigation.Common": "2.6.0.1",
@@ -2619,10 +2687,10 @@
           "buildTransitive/Microsoft.Maui.Core.targets": {}
         }
       },
-      "Microsoft.Maui.Essentials/8.0.7": {
+      "Microsoft.Maui.Essentials/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.AndroidX.Browser": "1.5.0.3",
           "Xamarin.AndroidX.Security.SecurityCrypto": "1.1.0.1-alpha06",
           "Xamarin.Google.Crypto.Tink.Android": "1.10.0"
@@ -2638,7 +2706,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.7": {
+      "Microsoft.Maui.Graphics/8.0.21": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -2651,7 +2719,7 @@
           }
         }
       },
-      "Microsoft.Maui.Resizetizer/8.0.7": {
+      "Microsoft.Maui.Resizetizer/8.0.21": {
         "type": "package",
         "build": {
           "buildTransitive/Microsoft.Maui.Resizetizer.props": {},
@@ -4438,6 +4506,41 @@
       }
     },
     "net8.0-android34.0/android-arm64": {
+      "CommunityToolkit.Maui/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.2",
+          "Microsoft.Maui.Controls": "8.0.21",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.21",
+          "Microsoft.Maui.Essentials": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -4622,34 +4725,33 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Maui.Controls/8.0.7": {
+      "Microsoft.Maui.Controls/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7",
-          "Microsoft.Maui.Resizetizer": "8.0.7"
+          "Microsoft.Maui.Controls.Build.Tasks": "8.0.21",
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21",
+          "Microsoft.Maui.Resizetizer": "8.0.21"
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/8.0.7": {
+      "Microsoft.Maui.Controls.Build.Tasks/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.props": {},
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.targets": {}
         }
       },
-      "Microsoft.Maui.Controls.Compatibility/8.0.7": {
+      "Microsoft.Maui.Controls.Compatibility/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Controls": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Compatibility.dll": {
@@ -4662,14 +4764,14 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Core/8.0.7": {
+      "Microsoft.Maui.Controls.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.dll": {
@@ -4786,12 +4888,12 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Xaml/8.0.7": {
+      "Microsoft.Maui.Controls.Xaml/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Xaml.dll": {
@@ -4804,15 +4906,15 @@
           }
         }
       },
-      "Microsoft.Maui.Core/8.0.7": {
+      "Microsoft.Maui.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Essentials": "8.0.7",
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Essentials": "8.0.21",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.Android.Glide": "4.15.1.2",
           "Xamarin.AndroidX.Lifecycle.LiveData": "2.6.1.3",
           "Xamarin.AndroidX.Navigation.Common": "2.6.0.1",
@@ -4837,10 +4939,10 @@
           "buildTransitive/Microsoft.Maui.Core.targets": {}
         }
       },
-      "Microsoft.Maui.Essentials/8.0.7": {
+      "Microsoft.Maui.Essentials/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.AndroidX.Browser": "1.5.0.3",
           "Xamarin.AndroidX.Security.SecurityCrypto": "1.1.0.1-alpha06",
           "Xamarin.Google.Crypto.Tink.Android": "1.10.0"
@@ -4856,7 +4958,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.7": {
+      "Microsoft.Maui.Graphics/8.0.21": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -4869,7 +4971,7 @@
           }
         }
       },
-      "Microsoft.Maui.Resizetizer/8.0.7": {
+      "Microsoft.Maui.Resizetizer/8.0.21": {
         "type": "package",
         "build": {
           "buildTransitive/Microsoft.Maui.Resizetizer.props": {},
@@ -6656,6 +6758,41 @@
       }
     },
     "net8.0-android34.0/android-x64": {
+      "CommunityToolkit.Maui/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.2",
+          "Microsoft.Maui.Controls": "8.0.21",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.21",
+          "Microsoft.Maui.Essentials": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -6840,34 +6977,33 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Maui.Controls/8.0.7": {
+      "Microsoft.Maui.Controls/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7",
-          "Microsoft.Maui.Resizetizer": "8.0.7"
+          "Microsoft.Maui.Controls.Build.Tasks": "8.0.21",
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21",
+          "Microsoft.Maui.Resizetizer": "8.0.21"
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/8.0.7": {
+      "Microsoft.Maui.Controls.Build.Tasks/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.props": {},
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.targets": {}
         }
       },
-      "Microsoft.Maui.Controls.Compatibility/8.0.7": {
+      "Microsoft.Maui.Controls.Compatibility/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Controls": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Compatibility.dll": {
@@ -6880,14 +7016,14 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Core/8.0.7": {
+      "Microsoft.Maui.Controls.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.dll": {
@@ -7004,12 +7140,12 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Xaml/8.0.7": {
+      "Microsoft.Maui.Controls.Xaml/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Xaml.dll": {
@@ -7022,15 +7158,15 @@
           }
         }
       },
-      "Microsoft.Maui.Core/8.0.7": {
+      "Microsoft.Maui.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Essentials": "8.0.7",
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Essentials": "8.0.21",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.Android.Glide": "4.15.1.2",
           "Xamarin.AndroidX.Lifecycle.LiveData": "2.6.1.3",
           "Xamarin.AndroidX.Navigation.Common": "2.6.0.1",
@@ -7055,10 +7191,10 @@
           "buildTransitive/Microsoft.Maui.Core.targets": {}
         }
       },
-      "Microsoft.Maui.Essentials/8.0.7": {
+      "Microsoft.Maui.Essentials/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.AndroidX.Browser": "1.5.0.3",
           "Xamarin.AndroidX.Security.SecurityCrypto": "1.1.0.1-alpha06",
           "Xamarin.Google.Crypto.Tink.Android": "1.10.0"
@@ -7074,7 +7210,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.7": {
+      "Microsoft.Maui.Graphics/8.0.21": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -7087,7 +7223,7 @@
           }
         }
       },
-      "Microsoft.Maui.Resizetizer/8.0.7": {
+      "Microsoft.Maui.Resizetizer/8.0.21": {
         "type": "package",
         "build": {
           "buildTransitive/Microsoft.Maui.Resizetizer.props": {},
@@ -8874,6 +9010,41 @@
       }
     },
     "net8.0-android34.0/android-x86": {
+      "CommunityToolkit.Maui/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Maui.Core": "9.0.2",
+          "Microsoft.Maui.Controls": "8.0.21",
+          "Microsoft.Maui.Controls.Compatibility": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Maui.Core/9.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Core": "8.0.21",
+          "Microsoft.Maui.Essentials": "8.0.21"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -9058,34 +9229,33 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Maui.Controls/8.0.7": {
+      "Microsoft.Maui.Controls/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Build.Tasks": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7",
-          "Microsoft.Maui.Resizetizer": "8.0.7"
+          "Microsoft.Maui.Controls.Build.Tasks": "8.0.21",
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21",
+          "Microsoft.Maui.Resizetizer": "8.0.21"
         }
       },
-      "Microsoft.Maui.Controls.Build.Tasks/8.0.7": {
+      "Microsoft.Maui.Controls.Build.Tasks/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.props": {},
           "buildTransitive/netstandard2.0/Microsoft.Maui.Controls.Build.Tasks.targets": {}
         }
       },
-      "Microsoft.Maui.Controls.Compatibility/8.0.7": {
+      "Microsoft.Maui.Controls.Compatibility/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Controls": "8.0.7",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Controls.Xaml": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Controls.Xaml": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Compatibility.dll": {
@@ -9098,14 +9268,14 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Core/8.0.7": {
+      "Microsoft.Maui.Controls.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.dll": {
@@ -9222,12 +9392,12 @@
           }
         }
       },
-      "Microsoft.Maui.Controls.Xaml/8.0.7": {
+      "Microsoft.Maui.Controls.Xaml/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Maui.Controls.Core": "8.0.7",
-          "Microsoft.Maui.Core": "8.0.7"
+          "Microsoft.Maui.Controls.Core": "8.0.21",
+          "Microsoft.Maui.Core": "8.0.21"
         },
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Controls.Xaml.dll": {
@@ -9240,15 +9410,15 @@
           }
         }
       },
-      "Microsoft.Maui.Core/8.0.7": {
+      "Microsoft.Maui.Core/8.0.21": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "Microsoft.Maui.Essentials": "8.0.7",
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Essentials": "8.0.21",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.Android.Glide": "4.15.1.2",
           "Xamarin.AndroidX.Lifecycle.LiveData": "2.6.1.3",
           "Xamarin.AndroidX.Navigation.Common": "2.6.0.1",
@@ -9273,10 +9443,10 @@
           "buildTransitive/Microsoft.Maui.Core.targets": {}
         }
       },
-      "Microsoft.Maui.Essentials/8.0.7": {
+      "Microsoft.Maui.Essentials/8.0.21": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Graphics": "8.0.7",
+          "Microsoft.Maui.Graphics": "8.0.21",
           "Xamarin.AndroidX.Browser": "1.5.0.3",
           "Xamarin.AndroidX.Security.SecurityCrypto": "1.1.0.1-alpha06",
           "Xamarin.Google.Crypto.Tink.Android": "1.10.0"
@@ -9292,7 +9462,7 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics/8.0.7": {
+      "Microsoft.Maui.Graphics/8.0.21": {
         "type": "package",
         "compile": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
@@ -9305,7 +9475,7 @@
           }
         }
       },
-      "Microsoft.Maui.Resizetizer/8.0.7": {
+      "Microsoft.Maui.Resizetizer/8.0.21": {
         "type": "package",
         "build": {
           "buildTransitive/Microsoft.Maui.Resizetizer.props": {},
@@ -11093,6 +11263,59 @@
     }
   },
   "libraries": {
+    "CommunityToolkit.Maui/9.0.2": {
+      "sha512": "YC8z7ZRuzVHY+UaT15S1qU36Ukr2dW2JnTVYRR7vkFx5LM9/ezBHK/Jbm0u4nYaScgHK1dL4ta1otkaauUktiQ==",
+      "type": "package",
+      "path": "communitytoolkit.maui/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.Analyzers.dll",
+        "analyzers/dotnet/cs/CommunityToolkit.Maui.SourceGenerators.dll",
+        "communitytoolkit.maui.9.0.2.nupkg.sha512",
+        "communitytoolkit.maui.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-ios17.2/CommunityToolkit.Maui.dll",
+        "lib/net8.0-ios17.2/CommunityToolkit.Maui.xml",
+        "lib/net8.0-maccatalyst17.2/CommunityToolkit.Maui.dll",
+        "lib/net8.0-maccatalyst17.2/CommunityToolkit.Maui.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.xml",
+        "lib/net8.0/CommunityToolkit.Maui.dll",
+        "lib/net8.0/CommunityToolkit.Maui.xml"
+      ]
+    },
+    "CommunityToolkit.Maui.Core/9.0.2": {
+      "sha512": "+h8VJxTiLZCm/gPSPUyj18Cw6H028GV23Hxa3/c6x/B8SSXXX/fT3s0b7SeYure7TeWrsku0Px4vlES4TFSlHg==",
+      "type": "package",
+      "path": "communitytoolkit.maui.core/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ReadMe.txt",
+        "communitytoolkit.maui.core.9.0.2.nupkg.sha512",
+        "communitytoolkit.maui.core.nuspec",
+        "icon.png",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-android34.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-ios17.2/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-ios17.2/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-maccatalyst17.2/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-maccatalyst17.2/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-tizen8.0/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0-windows10.0.19041/CommunityToolkit.Maui.Core.xml",
+        "lib/net8.0/CommunityToolkit.Maui.Core.dll",
+        "lib/net8.0/CommunityToolkit.Maui.Core.xml"
+      ]
+    },
     "GoogleGson/2.10.1.4": {
       "sha512": "L1vdbwbQzvKUoUGiMpMoJG5fqfLXaP6zMy1a26AYJQJSQKUO7Ojr2U5BAmgQoRxQ8J2GDjBfnfgnrsnorb4y5Q==",
       "type": "package",
@@ -11447,10 +11670,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Maui.Controls/8.0.7": {
-      "sha512": "SumEvnJpCa/x0fldkVtpaBUqZdrRYo+HLpHw73rzx5Q1R06fuAFzKBXQX/2bzDlfKg5oPGM1rrps/G5IacNWog==",
+    "Microsoft.Maui.Controls/8.0.21": {
+      "sha512": "G+Dz5ghMoJtR9xethz6spEfxNmfFOJ/UHVAI1GT5kZ3NxkHPJDHI7qfEK6TkMm37vQ/dHrcMLDamE91GCJHPNA==",
       "type": "package",
-      "path": "microsoft.maui.controls/8.0.7",
+      "path": "microsoft.maui.controls/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11458,14 +11681,14 @@
         "README.md",
         "THIRD-PARTY-NOTICES.TXT",
         "icon.png",
-        "microsoft.maui.controls.8.0.7.nupkg.sha512",
+        "microsoft.maui.controls.8.0.21.nupkg.sha512",
         "microsoft.maui.controls.nuspec"
       ]
     },
-    "Microsoft.Maui.Controls.Build.Tasks/8.0.7": {
-      "sha512": "wKS5mLKEWLNHa4wtDhADe0zgCY8jmLeTSw0u0eAAjTAbC8frZvh2kECrKAM2SD1teM/BkQ8Siz4coTOAkRkEqg==",
+    "Microsoft.Maui.Controls.Build.Tasks/8.0.21": {
+      "sha512": "RgQUfS0TOubvr+oXXGNVo16qZpImhH6DuGOqaPqE+wXKuGHHZo5YY6ri9kKtl33kQ+BTD5ym677l88cA4nUIuA==",
       "type": "package",
-      "path": "microsoft.maui.controls.build.tasks/8.0.7",
+      "path": "microsoft.maui.controls.build.tasks/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11543,14 +11766,14 @@
         "buildTransitive/netstandard2.0/zh-Hans/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
         "buildTransitive/netstandard2.0/zh-Hant/Microsoft.Maui.Controls.Build.Tasks.resources.dll",
         "icon.png",
-        "microsoft.maui.controls.build.tasks.8.0.7.nupkg.sha512",
+        "microsoft.maui.controls.build.tasks.8.0.21.nupkg.sha512",
         "microsoft.maui.controls.build.tasks.nuspec"
       ]
     },
-    "Microsoft.Maui.Controls.Compatibility/8.0.7": {
-      "sha512": "jKn7m+8BevPWeJ57i9vjpELEozOw4tROgGNWrRpHgZ7YHwIslw5+eQrJwZr54+1m6MDLPe/F9Tw8s25VXQJTag==",
+    "Microsoft.Maui.Controls.Compatibility/8.0.21": {
+      "sha512": "Eo/6u5yKvd7ZLGfRDPc0C54ChL3XdSbLXBeUvY6YYO/3N2C9a+Y6p5KJKWNXINa14Dk5NlSsSIMN/h/sry4qxw==",
       "type": "package",
-      "path": "microsoft.maui.controls.compatibility/8.0.7",
+      "path": "microsoft.maui.controls.compatibility/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11588,14 +11811,14 @@
         "lib/netstandard2.1/Microsoft.Maui.Controls.Compatibility.dll",
         "lib/netstandard2.1/Microsoft.Maui.Controls.Compatibility.pdb",
         "lib/netstandard2.1/Microsoft.Maui.Controls.Compatibility.xml",
-        "microsoft.maui.controls.compatibility.8.0.7.nupkg.sha512",
+        "microsoft.maui.controls.compatibility.8.0.21.nupkg.sha512",
         "microsoft.maui.controls.compatibility.nuspec"
       ]
     },
-    "Microsoft.Maui.Controls.Core/8.0.7": {
-      "sha512": "N2b9M6cVlg9H8k0Otj/WgDQA5ldyIgQK23yoWkzSGLRahbkbFLYsOgSDy2RouhxLPyvuLx1xP4JZ+e7EXLmoIg==",
+    "Microsoft.Maui.Controls.Core/8.0.21": {
+      "sha512": "LQqtolKXHETd9E7kZq4tgRQR0ZKnxqDIP/p/9igxA14B+gZJDVVlF7WJWDLibGxaUdiobA9mm84SGn18mKYcgA==",
       "type": "package",
-      "path": "microsoft.maui.controls.core/8.0.7",
+      "path": "microsoft.maui.controls.core/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11957,14 +12180,14 @@
         "lib/netstandard2.1/zh-HK/Microsoft.Maui.Controls.resources.dll",
         "lib/netstandard2.1/zh-Hans/Microsoft.Maui.Controls.resources.dll",
         "lib/netstandard2.1/zh-Hant/Microsoft.Maui.Controls.resources.dll",
-        "microsoft.maui.controls.core.8.0.7.nupkg.sha512",
+        "microsoft.maui.controls.core.8.0.21.nupkg.sha512",
         "microsoft.maui.controls.core.nuspec"
       ]
     },
-    "Microsoft.Maui.Controls.Xaml/8.0.7": {
-      "sha512": "Q1LE63kHjJvZGucJxX2Pj3b6BXp2XBZvncixwdcNlh9LCPzKeW13ws+IknOe+vrKetO1XHro5b+Zfyv0ZPVfzA==",
+    "Microsoft.Maui.Controls.Xaml/8.0.21": {
+      "sha512": "0nphN5lAzrok587GgPj3pnzuYphvXDFNR26FX91TvHg844zuD6CpXwNPcIqmSxBPz1X0OwidQ4LWssTa1Wm64Q==",
       "type": "package",
-      "path": "microsoft.maui.controls.xaml/8.0.7",
+      "path": "microsoft.maui.controls.xaml/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12017,14 +12240,14 @@
         "lib/netstandard2.1/Microsoft.Maui.Controls.Xaml.dll",
         "lib/netstandard2.1/Microsoft.Maui.Controls.Xaml.pdb",
         "lib/netstandard2.1/Microsoft.Maui.Controls.Xaml.xml",
-        "microsoft.maui.controls.xaml.8.0.7.nupkg.sha512",
+        "microsoft.maui.controls.xaml.8.0.21.nupkg.sha512",
         "microsoft.maui.controls.xaml.nuspec"
       ]
     },
-    "Microsoft.Maui.Core/8.0.7": {
-      "sha512": "KkaKtW9skWeanVeH35ozAV8ZpHh3wJMI3Imez/p/dT6QxrdSqG3GJexD5XXiijyNmt2+o2p7F7gqRfHG0PAUsg==",
+    "Microsoft.Maui.Core/8.0.21": {
+      "sha512": "grbVRGHOPqZPjEBdXjQSMCtIAC+oq3woqnpBLD0/nh3pI0A5WU2jT/YwC4CIL1mX5kjl5H6pQBnAcT3mwJWVSw==",
       "type": "package",
-      "path": "microsoft.maui.core/8.0.7",
+      "path": "microsoft.maui.core/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12071,14 +12294,14 @@
         "lib/netstandard2.1/Microsoft.Maui.dll",
         "lib/netstandard2.1/Microsoft.Maui.pdb",
         "lib/netstandard2.1/Microsoft.Maui.xml",
-        "microsoft.maui.core.8.0.7.nupkg.sha512",
+        "microsoft.maui.core.8.0.21.nupkg.sha512",
         "microsoft.maui.core.nuspec"
       ]
     },
-    "Microsoft.Maui.Essentials/8.0.7": {
-      "sha512": "jD0Bn1bWFgVrKb7TL1WtlxoB+CbAUyFJRlR7SPPvHm5Ct3mU/Q4n/01qoauRlVfMBq/CDU2cfulDbeORuHY0IQ==",
+    "Microsoft.Maui.Essentials/8.0.21": {
+      "sha512": "qqSc8Q4fOPsGGzvkuOaonjvhskD5XTOAsLg3a5U/9VN8vogG/4mA4SjIlZMWneoOjn2nas58PKBHKibUzUjqQQ==",
       "type": "package",
-      "path": "microsoft.maui.essentials/8.0.7",
+      "path": "microsoft.maui.essentials/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12136,14 +12359,14 @@
         "lib/netstandard2.1/Microsoft.Maui.Essentials.dll",
         "lib/netstandard2.1/Microsoft.Maui.Essentials.pdb",
         "lib/netstandard2.1/Microsoft.Maui.Essentials.xml",
-        "microsoft.maui.essentials.8.0.7.nupkg.sha512",
+        "microsoft.maui.essentials.8.0.21.nupkg.sha512",
         "microsoft.maui.essentials.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics/8.0.7": {
-      "sha512": "QTVeQHDyvXk3zA3ymhw3w6Rf8g5iOyq8OY58a3c+E+DnOQgZ7bps/qMPzqVvgyICQ/GgbvHxnOCna+N3YiWiDw==",
+    "Microsoft.Maui.Graphics/8.0.21": {
+      "sha512": "aEL7TzdScoUKy+QHnl7llC5DxfdkI/Rv45UnTdIqQUbBkCfHDjG/hjPUCWE0VipRL/qjWMk2phkfHwJmf1Zz7w==",
       "type": "package",
-      "path": "microsoft.maui.graphics/8.0.7",
+      "path": "microsoft.maui.graphics/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12205,20 +12428,21 @@
         "lib/netstandard2.1/Microsoft.Maui.Graphics.dll",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.pdb",
         "lib/netstandard2.1/Microsoft.Maui.Graphics.xml",
-        "microsoft.maui.graphics.8.0.7.nupkg.sha512",
+        "microsoft.maui.graphics.8.0.21.nupkg.sha512",
         "microsoft.maui.graphics.nuspec"
       ]
     },
-    "Microsoft.Maui.Resizetizer/8.0.7": {
-      "sha512": "D+u0u/0am2vmkt3oKj64hgsmSb7pT1xwA/ID6Du8lYWdBMqQR50EWcdwMUs723TYDFDBE2po0/Z3Ot3lX55kgg==",
+    "Microsoft.Maui.Resizetizer/8.0.21": {
+      "sha512": "rYn8z4My5clzxZPUOzJiQGm0H0viBXC87Q/xDNGG1405rlpun5gMlTnj1ZE20rlQHRhNidLeQIQS6kYtV6fO1g==",
       "type": "package",
-      "path": "microsoft.maui.resizetizer/8.0.7",
+      "path": "microsoft.maui.resizetizer/8.0.21",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "README.md",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/ExCSS.dll",
         "buildTransitive/Fizzler.dll",
         "buildTransitive/HarfBuzzSharp.dll",
         "buildTransitive/HarfBuzzSharp.pdb",
@@ -12262,7 +12486,7 @@
         "buildTransitive/x86/libHarfBuzzSharp.dll",
         "buildTransitive/x86/libSkiaSharp.dll",
         "icon.png",
-        "microsoft.maui.resizetizer.8.0.7.nupkg.sha512",
+        "microsoft.maui.resizetizer.8.0.21.nupkg.sha512",
         "microsoft.maui.resizetizer.nuspec"
       ]
     },
@@ -14363,9 +14587,10 @@
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
       "Android.UsbSerial >= 1.0.0",
+      "CommunityToolkit.Maui >= 9.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.0",
-      "Microsoft.Maui.Controls >= 8.0.7",
-      "Microsoft.Maui.Controls.Compatibility >= 8.0.7",
+      "Microsoft.Maui.Controls >= 8.0.21",
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.21",
       "Microsoft.NET.ILLink.Tasks >= 8.0.3"
     ]
   },
@@ -14424,17 +14649,21 @@
       "net8.0-android34.0": {
         "targetAlias": "net8.0-android",
         "dependencies": {
+          "CommunityToolkit.Maui": {
+            "target": "Package",
+            "version": "[9.0.2, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[8.0.0, )"
           },
           "Microsoft.Maui.Controls": {
             "target": "Package",
-            "version": "[8.0.7, )"
+            "version": "[8.0.21, )"
           },
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
-            "version": "[8.0.7, )"
+            "version": "[8.0.21, )"
           },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",

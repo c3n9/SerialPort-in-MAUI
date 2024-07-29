@@ -1,13 +1,16 @@
 ﻿using System;
 using Microsoft.Maui.Controls;
 using System.Threading.Tasks;
+using CommunityToolkit.Maui.Core;
+using System.Threading;
+using CommunityToolkit.Maui.Alerts;
 
 namespace SerialPortTest
 {
 	public partial class MainPage : ContentPage
 	{
 		private IUsbService _usbService;
-
+		CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
 		public MainPage()
 		{
 			InitializeComponent();
@@ -25,6 +28,7 @@ namespace SerialPortTest
 			{
 				await DisplayAlert("Ошибка", "Введите сообщение", "OK");
 			}
+
 		}
 
 		private async void BConnect_Clicked(System.Object sender, System.EventArgs e)
@@ -37,11 +41,11 @@ namespace SerialPortTest
 			var success = await _usbService.ConnectAsync(PComPorts.SelectedItem.ToString());
 			if (success)
 			{
-				await DisplayAlert("Успешно", "Вы подключились к COM порту", "OK");
+				await Toast.Make("Вы подключились к COM порту", ToastDuration.Long,16).Show(cancellationTokenSource.Token);
 			}
 			else
 			{
-				await DisplayAlert("Ошибка", "Не удалось подключиться к COM порту", "OK");
+				await Toast.Make("Не удалось подключиться к COM порту", ToastDuration.Long,16).Show(cancellationTokenSource.Token);
 			}
 		}
 
