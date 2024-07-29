@@ -626,3 +626,4 @@ C:\Users\C3N9\Desktop\SerialPortTestInAndroid\SerialPortTest\obj\Debug\net8.0-io
 C:\Users\C3N9\Desktop\SerialPortTestInAndroid\SerialPortTest\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\MauiInfo.plist
 C:\Users\C3N9\Desktop\SerialPortTestInAndroid\SerialPortTest\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\C3N9\Desktop\SerialPortTestInAndroid\SerialPortTest\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\manakov\Documents\SerialPortTestInAndroid\SerialPortTest\bin\Debug\net8.0-ios\iossimulator-x64\libicui18n.a

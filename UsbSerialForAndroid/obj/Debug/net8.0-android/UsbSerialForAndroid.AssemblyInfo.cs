@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Android.UsbSerial")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74d9f9ad5f213ff44d34d09b5c593f97b0a309ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+214e367605c8fd6ddd3b844859cc0540b60f5799")]
 [assembly: System.Reflection.AssemblyProductAttribute("Android.UsbSerial")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Android.UsbSerial")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

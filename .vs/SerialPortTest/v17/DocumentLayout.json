@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|c:\\users\\manakov\\documents\\serialporttestinandroid\\serialporttest\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|solutionrelative:serialporttest\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|c:\\users\\manakov\\documents\\serialporttestinandroid\\serialporttest\\serialporttest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|solutionrelative:serialporttest\\serialporttest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5A4049E-8F2A-480B-9AD1-F9E838944270}|UsbSerialForAndroid\\UsbSerialForAndroid.csproj|c:\\users\\manakov\\documents\\serialporttestinandroid\\usbserialforandroid\\usbserialforandroid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A5A4049E-8F2A-480B-9AD1-F9E838944270}|UsbSerialForAndroid\\UsbSerialForAndroid.csproj|solutionrelative:usbserialforandroid\\usbserialforandroid.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "SerialPortTest\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\MainPage.xaml.cs",
+              "RelativeToolTip": "SerialPortTest\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T05:59:31.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsbSerialForAndroid",
+              "DocumentMoniker": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
+              "RelativeDocumentMoniker": "UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
+              "ToolTip": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
+              "RelativeToolTip": "UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-29T05:51:08.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SerialPortTest",
+              "DocumentMoniker": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
+              "RelativeDocumentMoniker": "SerialPortTest\\SerialPortTest.csproj",
+              "ToolTip": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
+              "RelativeToolTip": "SerialPortTest\\SerialPortTest.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-29T05:47:16.862Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

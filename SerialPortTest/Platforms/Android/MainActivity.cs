@@ -19,7 +19,6 @@ namespace SerialPortTest
 	{
 		private UsbReceiver _usbReceiver;
         UsbManager usbManager;
-        ListView listView;
 
         protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -31,6 +30,8 @@ namespace SerialPortTest
 			_usbReceiver = new UsbReceiver();
 			RegisterReceiver(_usbReceiver, new IntentFilter(UsbManager.ActionUsbDeviceAttached));
 			RegisterReceiver(_usbReceiver, new IntentFilter(UsbManager.ActionUsbDeviceDetached));
+
+			DependencyService.Register<IUsbService, UsbServiceAndroid>();
 		}
 
 		protected override void OnDestroy()
@@ -38,5 +39,6 @@ namespace SerialPortTest
 			base.OnDestroy();
 			UnregisterReceiver(_usbReceiver);
 		}
+
 	}
 }
