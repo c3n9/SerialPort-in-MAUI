@@ -24,7 +24,13 @@ namespace SerialPortTest
         protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
+
 			usbManager = GetSystemService(Context.UsbService) as UsbManager;
+
+			// Распознование подключения USB-устройства
+			_usbReceiver = new UsbReceiver();
+			RegisterReceiver(_usbReceiver, new IntentFilter(UsbManager.ActionUsbDeviceAttached));
+			RegisterReceiver(_usbReceiver, new IntentFilter(UsbManager.ActionUsbDeviceDetached));
 		}
 
 		protected override void OnDestroy()

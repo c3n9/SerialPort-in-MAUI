@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+MsCcCXJW2jYftY1Fd5eJf9czSaf39kh+i31TkFB+tKYaBNylse9jArs3DPnN6BoH9T+Sjb4O89F3GhsS51eqA==",
+  "dgSpecHash": "sswv3Myos4JdQ7Zemvl5ErAV5UAkpQMXTtPCFV/Rg09kqQkOpin/Iwct1X35JLbIcjtq8IKaawV41jeWPexN9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\quart\\source\\repos\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
+  "projectFilePath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

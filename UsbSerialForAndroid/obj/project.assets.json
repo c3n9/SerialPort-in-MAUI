@@ -8,24 +8,24 @@
     "net8.0-android34.0": []
   },
   "packageFolders": {
-    "C:\\Users\\quart\\.nuget\\packages\\": {},
+    "C:\\Users\\manakov\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quart\\source\\repos\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
+      "projectUniqueName": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
       "projectName": "Android.UsbSerial",
-      "projectPath": "C:\\Users\\quart\\source\\repos\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
-      "packagesPath": "C:\\Users\\quart\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\quart\\source\\repos\\SerialPortTestInAndroid\\UsbSerialForAndroid\\obj\\",
+      "projectPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
+      "packagesPath": "C:\\Users\\manakov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\UsbSerialForAndroid\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\quart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\manakov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -76,7 +76,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
