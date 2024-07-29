@@ -39,7 +39,6 @@ public interface IUsbService
    
 8. With the help of [DependencyService](https://github.com/c3n9/SerialPortTestInAndroid/blob/master/SerialPortTest/MainPage.xaml.cs), we will turn to platform-dependent code and you can work safely with our controller.
 
-Everything has been tested using an Arduino MEGA 2560 and a Google Pixel 7a smartphone.
 
 ## Arduino Firmware Code
 
@@ -66,3 +65,5 @@ void loop() {
   delay(10); // wait for 10 milliseconds before the next loop iteration
 }
 ```
+
+### Everything has been tested using an Arduino MEGA 2560 and a Google Pixel 7a smartphone.
