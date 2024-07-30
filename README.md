@@ -43,26 +43,28 @@ public interface IUsbService
 ## Arduino Firmware Code
 
 ```
-char commandValue; // data received from the serial port
-int ledPin = 13; // built-in LED pin
+char commandValue; // Data received from the serial port
+int ledPin = 13; // Built-in LED pin
 
 void setup() {
-  pinMode(ledPin, OUTPUT); // set the pin mode to output
-  Serial.begin(9600); // initialize serial communication at 9600 bits per second
+  pinMode(ledPin, OUTPUT); // Set the pin mode to output
+  Serial.begin(9600); // Initialize serial communication at 9600 bits per second
 }
 
 void loop() {
-  if (Serial.available()) { // check if data is available to read
-    commandValue = Serial.read(); // read the incoming data
-  }
+  if (Serial.available()) { // Check if data is available to read
+    commandValue = Serial.read(); // Read the incoming data
 
-  if (commandValue == '1') { // if the received data is '1'
-    digitalWrite(ledPin, HIGH); // turn the LED on
+    if (commandValue == '1') { // If the received data is '1'
+      Serial.println("1"); // Send '1' to serial monitor
+      digitalWrite(ledPin, HIGH); // Turn on the LED
+    }
+    else if (commandValue == '0') { // If the received data is '0'
+      Serial.println("2"); // Send '2' to serial monitor
+      digitalWrite(ledPin, LOW); // Turn off the LED
+    }
   }
-  else { // if the received data is not '1'
-    digitalWrite(ledPin, LOW); // turn the LED off
-  }
-  delay(10); // wait for 10 milliseconds before the next loop iteration
+  delay(10); // Wait for 10 milliseconds before the next loop iteration
 }
 ```
 
