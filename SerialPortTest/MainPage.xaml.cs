@@ -23,6 +23,12 @@ namespace SerialPortTest
 			{
 				await _usbService.SendMessageAsync(ENumber.Text);
 				await DisplayAlert("Успешно", "Сообщение отправлено", "OK");
+
+				var message = await _usbService.ReadMessageAsync();
+				if (!string.IsNullOrWhiteSpace(message))
+				{
+					await Toast.Make(message, ToastDuration.Long, 16).Show(cancellationTokenSource.Token);
+				}
 			}
 			else
 			{
@@ -41,11 +47,11 @@ namespace SerialPortTest
 			var success = await _usbService.ConnectAsync(PComPorts.SelectedItem.ToString());
 			if (success)
 			{
-				await Toast.Make("Вы подключились к COM порту", ToastDuration.Long,16).Show(cancellationTokenSource.Token);
+				await Toast.Make("Вы подключились к COM порту", ToastDuration.Long, 16).Show(cancellationTokenSource.Token);
 			}
 			else
 			{
-				await Toast.Make("Не удалось подключиться к COM порту", ToastDuration.Long,16).Show(cancellationTokenSource.Token);
+				await Toast.Make("Не удалось подключиться к COM порту", ToastDuration.Long, 16).Show(cancellationTokenSource.Token);
 			}
 		}
 
