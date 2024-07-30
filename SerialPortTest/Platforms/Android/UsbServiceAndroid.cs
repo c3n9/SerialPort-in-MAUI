@@ -32,9 +32,11 @@ namespace SerialPortTest
 			var device = deviceList.FirstOrDefault(d => d.DeviceName == portName);
 			if (device != null)
 			{
+				// Проверяем наличие разрешения на использование устройства
 				var permissionGranted = _usbManager.HasPermission(device);
 				if (!permissionGranted)
 				{
+					// Запрашиваем разрешение
 					var permissionIntent = PendingIntent.GetBroadcast(Android.App.Application.Context, 0, new Intent("com.example.USB_PERMISSION"), PendingIntentFlags.UpdateCurrent);
 					_usbManager.RequestPermission(device, permissionIntent);
 
@@ -80,6 +82,30 @@ namespace SerialPortTest
 					System.Diagnostics.Debug.WriteLine($"Ошибка отправки сообщения: {ex.Message}");
 				}
 			}
+		}
+		public async Task<string> ReadMessageAsync()
+		{
+			if (_connectedPort != null)
+			{
+				try
+				{
+					// Буфер для чтения данных
+					byte[] buffer = new byte[1024];
+					// Чтение данных из порта
+					int numBytesRead = await Task.Run(() => _connectedPort.Read(buffer, 1000)); // Таймаут 1000 мс
+					if (numBytesRead > 0)
+					{
+						// Конвертация прочитанных байт в строку
+						return System.Text.Encoding.ASCII.GetString(buffer, 0, numBytesRead);
+					}
+				}
+				catch (Exception ex)
+				{
+					// Обработка ошибок
+					System.Diagnostics.Debug.WriteLine($"Ошибка чтения сообщения: {ex.Message}");
+				}
+			}
+			return string.Empty; // Возвращаем пустую строку, если данные не были прочитаны
 		}
 	}
 }

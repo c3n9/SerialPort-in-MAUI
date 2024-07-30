@@ -1,20 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|c:\\users\\manakov\\documents\\serialporttestinandroid\\serialporttest\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|solutionrelative:serialporttest\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|c:\\users\\manakov\\documents\\serialporttestinandroid\\serialporttest\\serialporttest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|solutionrelative:serialporttest\\serialporttest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|c:\\users\\manakov\\documents\\serialporttestinandroid\\serialporttest\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9A67A79-97D9-452F-98F2-E4B6ED9D3F1C}|SerialPortTest\\SerialPortTest.csproj|solutionrelative:serialporttest\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\manakov\\Documents\\SerialPort-in-MAUI\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,46 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "SerialPortTest\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\MauiProgram.cs",
-              "RelativeToolTip": "SerialPortTest\\MauiProgram.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T08:36:57.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SerialPortTest",
-              "DocumentMoniker": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
-              "RelativeDocumentMoniker": "SerialPortTest\\SerialPortTest.csproj",
-              "ToolTip": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
-              "RelativeToolTip": "SerialPortTest\\SerialPortTest.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-29T08:32:27.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "SerialPortTest\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\MainPage.xaml.cs",
-              "RelativeToolTip": "SerialPortTest\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB0AAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T05:59:31.506Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             }
           ]
         }

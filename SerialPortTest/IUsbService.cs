@@ -11,5 +11,6 @@ namespace SerialPortTest
 		Task<IEnumerable<string>> GetAvailablePortsAsync();
 		Task<bool> ConnectAsync(string portName);
 		Task SendMessageAsync(string message);
+		Task<string> ReadMessageAsync();
 	}
 }

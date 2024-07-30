@@ -14601,11 +14601,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
+      "projectUniqueName": "C:\\Users\\manakov\\Documents\\SerialPort-in-MAUI\\SerialPortTest\\SerialPortTest.csproj",
       "projectName": "SerialPortTest",
-      "projectPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
+      "projectPath": "C:\\Users\\manakov\\Documents\\SerialPort-in-MAUI\\SerialPortTest\\SerialPortTest.csproj",
       "packagesPath": "C:\\Users\\manakov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\obj\\",
+      "outputPath": "C:\\Users\\manakov\\Documents\\SerialPort-in-MAUI\\SerialPortTest\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -14628,8 +14628,8 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "projectReferences": {
-            "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj": {
-              "projectPath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj"
+            "C:\\Users\\manakov\\Documents\\SerialPort-in-MAUI\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj": {
+              "projectPath": "C:\\Users\\manakov\\Documents\\SerialPort-in-MAUI\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8Duwcl4J8BvuhlGRM5/2I5jAWZvGyfjf8FU3UNrVVAhV6jU3nuIc6qKPebbD/DogDXemutyyClIsiLviV7yIjg==",
+  "dgSpecHash": "ECAttcI5fEM4vw0vC615k/AgSB+FbZfpbc/T+kXwrAkEPqVtsEqbqTgxKDYVHtPdJ6Cb0kGgXnsVZu5FJ2miAA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\manakov\\Documents\\SerialPortTestInAndroid\\SerialPortTest\\SerialPortTest.csproj",
+  "projectFilePath": "C:\\Users\\manakov\\Documents\\SerialPort-in-MAUI\\SerialPortTest\\SerialPortTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\manakov\\.nuget\\packages\\communitytoolkit.maui\\9.0.2\\communitytoolkit.maui.9.0.2.nupkg.sha512",
     "C:\\Users\\manakov\\.nuget\\packages\\communitytoolkit.maui.core\\9.0.2\\communitytoolkit.maui.core.9.0.2.nupkg.sha512",
