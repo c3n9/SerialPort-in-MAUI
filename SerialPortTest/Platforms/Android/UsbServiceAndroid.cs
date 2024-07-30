@@ -4,6 +4,7 @@ using Android.Hardware.Usb;
 using Hoho.Android.UsbSerial.Driver;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 [assembly: UsesFeature("android.hardware.usb.host")]
@@ -83,29 +84,29 @@ namespace SerialPortTest
 				}
 			}
 		}
-		public async Task<string> ReadMessageAsync()
-		{
-			if (_connectedPort != null)
-			{
-				try
-				{
-					// Буфер для чтения данных
-					byte[] buffer = new byte[1024];
-					// Чтение данных из порта
-					int numBytesRead = await Task.Run(() => _connectedPort.Read(buffer, 1000)); // Таймаут 1000 мс
-					if (numBytesRead > 0)
-					{
-						// Конвертация прочитанных байт в строку
-						return System.Text.Encoding.ASCII.GetString(buffer, 0, numBytesRead);
-					}
-				}
-				catch (Exception ex)
-				{
-					// Обработка ошибок
-					System.Diagnostics.Debug.WriteLine($"Ошибка чтения сообщения: {ex.Message}");
-				}
-			}
-			return string.Empty; // Возвращаем пустую строку, если данные не были прочитаны
-		}
-	}
+        public async Task<string> ReadMessageAsync()
+        {
+            if (_connectedPort != null)
+            {
+                try
+                {
+                    // Буфер для чтения данных
+                    byte[] buffer = new byte[1024];
+                    // Чтение данных из порта
+                    int numBytesRead = await Task.Run(() => _connectedPort.Read(buffer, 1000)); // Таймаут 1000 мс
+                    if (numBytesRead > 0)
+                    {
+                        // Конвертация прочитанных байт в строку
+                        return Encoding.ASCII.GetString(buffer, 0, numBytesRead);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Обработка ошибок
+                    System.Diagnostics.Debug.WriteLine($"Ошибка чтения сообщения: {ex.Message}");
+                }
+            }
+            return string.Empty; // Возвращаем пустую строку, если данные не были прочитаны
+        }
+    }
 }

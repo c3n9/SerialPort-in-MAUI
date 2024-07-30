@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mpsn2Fy91yAEzK4m6pZbYMw2e7DF9/J2YGchB42PomsH9Gbgj33aA2/S8hE1GvJ9dSTJX+UXMSa9hbDGfHJE3A==",
+  "dgSpecHash": "i7NtWBj6/sFLtkx5ApPfarKX7dAfo2l+u11J3a+3n3Io3UdaCrrUxUqU2OVUx2TbNdzg7hSmDApg63EtckQ85g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\manakov\\Documents\\SerialPort-in-MAUI\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
+  "projectFilePath": "C:\\Users\\quart\\source\\repos\\SerialPort-in-MAUI\\UsbSerialForAndroid\\UsbSerialForAndroid.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
