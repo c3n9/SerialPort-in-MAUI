@@ -35,7 +35,7 @@ public interface IUsbService
 }
 ```
 
-7. Add the [UsbServiceAndroid](https://github.com/c3n9/SerialPortTestInAndroid/tree/master/SerialPortTest/Platforms/Android) class to the Android folder, which will implement the created interface.
+7. Add the [UsbServiceAndroid](https://github.com/c3n9/SerialPort-in-MAUI/blob/master/SerialPortTest/Platforms/Android/UsbServiceAndroid.cs) class to the Android folder, which will implement the created interface.
    
 8. With the help of [DependencyService](https://github.com/c3n9/SerialPortTestInAndroid/blob/master/SerialPortTest/MainPage.xaml.cs), we will turn to platform-dependent code and you can work safely with our controller.
 
