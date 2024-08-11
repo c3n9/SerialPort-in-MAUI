@@ -40,7 +40,7 @@ public interface IUsbService
 8. With the help of [DependencyService](https://github.com/c3n9/SerialPortTestInAndroid/blob/master/SerialPortTest/MainPage.xaml.cs), we will turn to platform-dependent code and you can work safely with our controller.
 
 
-## Arduino Firmware Code
+## Arduino firmware Code
 
 ```
 char commandValue; // Data received from the serial port
