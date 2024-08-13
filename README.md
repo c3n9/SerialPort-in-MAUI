@@ -43,8 +43,7 @@ public interface IUsbService
 ## Arduino firmware Code
 
 ```
-char commandValue; // Data received from the serial port
-int ledPin = 13; // Built-in LED pin
+const int ledPin =  LED_BUILTIN;// the number of the LED pin
 
 void setup() {
   pinMode(ledPin, OUTPUT); // Set the pin mode to output
@@ -68,4 +67,4 @@ void loop() {
 }
 ```
 
-### Everything has been tested using an Arduino MEGA 2560 and a Google Pixel 7a smartphone.
+### Everything has been tested using an Arduino MEGA 2560б ESP32 and a Google Pixel 7a smartphone.
