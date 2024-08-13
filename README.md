@@ -67,4 +67,4 @@ void loop() {
 }
 ```
 
-### Everything has been tested using an Arduino MEGA 2560б ESP32 and a Google Pixel 7a smartphone.
+### Everything has been tested using an Arduino MEGA 2560, ESP32 and a Google Pixel 7a smartphone.
