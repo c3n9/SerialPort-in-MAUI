@@ -1,9 +1,12 @@
-﻿using Android.App;
+﻿using Android;
+using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.Hardware.Usb;
 using Android.Net.Nsd;
 using Android.OS;
+using AndroidX.Core.App;
+using AndroidX.Core.Content;
 using SerialPortTest.Platforms.Android;
 
 [assembly: UsesFeature("android.hardware.usb.host")]
@@ -22,17 +25,25 @@ namespace SerialPortTest
 
         protected override void OnCreate(Bundle savedInstanceState)
 		{
-			base.OnCreate(savedInstanceState);
+            base.OnCreate(savedInstanceState);
 
-			usbManager = GetSystemService(Context.UsbService) as UsbManager;
+            // Проверка разрешения BLUETOOTH_CONNECT
+            if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.BluetoothConnect)
+                != (int)Permission.Granted)
+            {
+                // Запрос разрешения
+                ActivityCompat.RequestPermissions(this,
+                    new string[] { Manifest.Permission.BluetoothConnect }, 0);
+            }
 
-			// Распознование подключения USB-устройства
-			_usbReceiver = new UsbReceiver();
-			RegisterReceiver(_usbReceiver, new IntentFilter(UsbManager.ActionUsbDeviceAttached));
-			RegisterReceiver(_usbReceiver, new IntentFilter(UsbManager.ActionUsbDeviceDetached));
+            usbManager = GetSystemService(Context.UsbService) as UsbManager;
 
-			DependencyService.Register<IUsbService, UsbServiceAndroid>();
-		}
+            _usbReceiver = new UsbReceiver();
+            RegisterReceiver(_usbReceiver, new IntentFilter(UsbManager.ActionUsbDeviceAttached));
+            RegisterReceiver(_usbReceiver, new IntentFilter(UsbManager.ActionUsbDeviceDetached));
+
+            DependencyService.Register<IUsbService, UsbServiceAndroid>();
+        }
 
 		protected override void OnDestroy()
 		{
