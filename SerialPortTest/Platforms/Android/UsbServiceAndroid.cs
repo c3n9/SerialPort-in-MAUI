@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Bluetooth;
 using Android.Content;
 using Android.Hardware.Usb;
 using Hoho.Android.UsbSerial.Driver;
@@ -15,18 +16,31 @@ namespace SerialPortTest
 	{
 		private UsbManager _usbManager;
 		private UsbSerialPort _connectedPort;
+		private BluetoothAdapter _bluetoothAdapter;
+		private BluetoothSocket _bluetoothSocket;
+		private BluetoothDevice _connectedBluetoothDevice;
 
 		public UsbServiceAndroid()
 		{
 			_usbManager = (UsbManager)Android.App.Application.Context.GetSystemService(Context.UsbService);
+			_bluetoothAdapter = BluetoothAdapter.DefaultAdapter;
 		}
 
+		// Метод для получения списка USB-портов
 		public async Task<IEnumerable<string>> GetAvailablePortsAsync()
 		{
 			var deviceList = _usbManager.DeviceList.Values;
 			return deviceList.Select(device => device.DeviceName).ToList();
 		}
 
+		// Метод для получения списка Bluetooth-устройств
+		public async Task<IEnumerable<string>> GetAvailableBluetoothDevicesAsync()
+		{
+			var pairedDevices = _bluetoothAdapter.BondedDevices;
+			return pairedDevices.Select(device => device.Name).ToList();
+		}
+
+		// Метод для подключения через USB
 		public async Task<bool> ConnectAsync(string portName)
 		{
 			var deviceList = _usbManager.DeviceList.Values;
@@ -66,6 +80,30 @@ namespace SerialPortTest
 			return false;
 		}
 
+		// Метод для подключения к Bluetooth-устройству
+		public async Task<bool> ConnectBluetoothAsync(string deviceName)
+		{
+			var device = _bluetoothAdapter.BondedDevices.FirstOrDefault(d => d.Name == deviceName);
+			if (device != null)
+			{
+				_connectedBluetoothDevice = device;
+				var uuid = device.GetUuids().FirstOrDefault()?.Uuid;
+				_bluetoothSocket = device.CreateRfcommSocketToServiceRecord(uuid);
+				try
+				{
+					await _bluetoothSocket.ConnectAsync();
+					return true;
+				}
+				catch (Exception ex)
+				{
+					System.Diagnostics.Debug.WriteLine($"Ошибка подключения к Bluetooth-устройству: {ex.Message}");
+				}
+			}
+			return false;
+		}
+
+
+		// Метод для отправки сообщения через USB и Bluetooth
 		public async Task SendMessageAsync(string message)
 		{
 			if (_connectedPort != null)
@@ -83,8 +121,23 @@ namespace SerialPortTest
 					System.Diagnostics.Debug.WriteLine($"Ошибка отправки сообщения: {ex.Message}");
 				}
 			}
+			else if (_bluetoothSocket != null && _bluetoothSocket.IsConnected)
+			{
+				try
+				{
+					byte[] buffer = Encoding.ASCII.GetBytes(message);
+					await _bluetoothSocket.OutputStream.WriteAsync(buffer, 0, buffer.Length);
+				}
+				catch (Exception ex)
+				{
+					System.Diagnostics.Debug.WriteLine($"Ошибка отправки сообщения через Bluetooth: {ex.Message}");
+				}
+			}
+
 		}
-        public async Task<string> ReadMessageAsync()
+
+		// Метод для чтения сообщения через USB и Bluetooth
+		public async Task<string> ReadMessageAsync()
         {
             if (_connectedPort != null)
             {
@@ -106,6 +159,20 @@ namespace SerialPortTest
                     System.Diagnostics.Debug.WriteLine($"Ошибка чтения сообщения: {ex.Message}");
                 }
             }
+			else if (_bluetoothSocket != null && _bluetoothSocket.IsConnected)
+            {
+                try
+                {
+                    byte[] buffer = new byte[1024];
+                    int bytesRead = await _bluetoothSocket.InputStream.ReadAsync(buffer, 0, buffer.Length);
+                    return Encoding.ASCII.GetString(buffer, 0, bytesRead);
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Ошибка чтения сообщения через Bluetooth: {ex.Message}");
+                }
+            }
+
             return string.Empty; // Возвращаем пустую строку, если данные не были прочитаны
         }
     }

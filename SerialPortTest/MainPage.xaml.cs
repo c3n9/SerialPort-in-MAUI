@@ -41,18 +41,41 @@ namespace SerialPortTest
 		{
 			if (PComPorts.SelectedItem == null)
 			{
-				await DisplayAlert("Ошибка", "Выберите COM порт", "OK");
+				await DisplayAlert("Ошибка", "Выберите COM порт или Bluetooth устройство", "OK");
 				return;
 			}
-			var success = await _usbService.ConnectAsync(PComPorts.SelectedItem.ToString());
-			if (success)
+
+			string selectedDevice = PComPorts.SelectedItem.ToString();
+			bool success = false;
+
+			// Определяем, является ли выбранное устройство USB или Bluetooth
+			var usbPorts = await _usbService.GetAvailablePortsAsync();
+			var bluetoothDevices = await _usbService.GetAvailableBluetoothDevicesAsync();
+
+			if (usbPorts.Contains(selectedDevice))
 			{
-				await Toast.Make("Вы подключились к COM порту", ToastDuration.Long, 16).Show(cancellationTokenSource.Token);
+				// Подключение к USB порту
+				success = await _usbService.ConnectAsync(selectedDevice);
+				if (success)
+				{
+					await Toast.Make("Вы подключились к COM порту", ToastDuration.Long, 16).Show(cancellationTokenSource.Token);
+				}
 			}
-			else
+			else if (bluetoothDevices.Contains(selectedDevice))
 			{
-				await Toast.Make("Не удалось подключиться к COM порту", ToastDuration.Long, 16).Show(cancellationTokenSource.Token);
+				// Подключение к Bluetooth устройству
+				success = await _usbService.ConnectBluetoothAsync(selectedDevice);
+				if (success)
+				{
+					await Toast.Make("Вы подключились к Bluetooth устройству", ToastDuration.Long, 16).Show(cancellationTokenSource.Token);
+				}
 			}
+
+			if (!success)
+			{
+				await Toast.Make("Не удалось подключиться к устройству", ToastDuration.Long, 16).Show(cancellationTokenSource.Token);
+			}
+
 		}
 
 		private async void BGetPorts_Clicked(object sender, EventArgs e)
@@ -60,7 +83,10 @@ namespace SerialPortTest
 			try
 			{
 				var ports = await _usbService.GetAvailablePortsAsync();
-				PComPorts.ItemsSource = ports.ToList();
+				var bluetoothDevices = await _usbService.GetAvailableBluetoothDevicesAsync();
+
+				var allDevices = ports.Concat(bluetoothDevices).ToList();
+				PComPorts.ItemsSource = allDevices;
 			}
 			catch (Exception ex)
 			{

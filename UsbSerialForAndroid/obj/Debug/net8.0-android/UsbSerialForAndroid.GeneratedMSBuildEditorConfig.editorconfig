@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hoho.Android.UsbSerial
-build_property.ProjectDir = C:\Users\quart\source\repos\SerialPort-in-MAUI\UsbSerialForAndroid\
+build_property.ProjectDir = C:\Users\manakov\Documents\SerialPort-in-MAUI\UsbSerialForAndroid\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
