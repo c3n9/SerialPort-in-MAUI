@@ -67,6 +67,6 @@ void loop() {
 }
 ```
 
-## Working with bluetooth / Not tested
+## Working with bluetooth / Not tested set and get value
 
 ### Everything has been tested using an Arduino MEGA 2560, ESP32 and a Google Pixel 7a smartphone.
